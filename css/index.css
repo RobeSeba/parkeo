@@ -1,0 +1,176 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+.contenedor-navegacion{
+    padding: 20px;
+    background-color: #042c4b !important;
+}
+.metodos-pago{
+    background-color: #042c4b ;
+}
+
+.metodos-pago h3{
+    color: white;
+}
+.menu-secundario{
+    background-color: #042c4b !important;
+}
+ .nav-item a{
+    color: white;
+ }
+.logo{
+    width: 150px;
+    height: 80px;
+    margin-right: 30px;
+}
+.black{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.black span{
+    display: block;
+    margin-right: 10px;
+}
+.black p{
+    margin-bottom: 0;
+}
+.contacto{
+    color: white;
+
+}
+
+.metodos-pago{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagos .container{
+    text-align: center;
+    padding: 20px 0px;
+}
+.pagos .container h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 61px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.presencial{
+    border-bottom: 2px solid transparent;
+}
+
+.presencial, .virtual{
+
+    cursor: pointer;
+ 
+}
+
+.presencial:hover{
+    border-bottom: 2px solid red;
+}
+
+.card-products__items-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.card-products__items-item {
+    display: flex
+;
+    align-items: center;
+}
+.card-products__items-text{
+    line-height: 128%;
+}
+
+.boton-orange{
+    background-color: orange;
+    
+    border: none;
+}
+.boton-orange:hover{
+    background-color: rgb(180, 119, 6);
+    color: black;
+}
+.contenedor-pagos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    max-width: 1200px;
+}
+
+
+.contenedor-pagosVirtual .boton-virtual{
+      width:50% ;
+      text-align: center;
+}
+
+.contenedor-pagosVirtual .contenedor-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-pagosVirtual{
+    display: none;
+}
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo-virtual, .modelo-virtual {
+    width: 150px;
+    height: 150px;
+}
+
+.contenedor-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px auto;
+    width: 300px;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-item a:hover{
+    color: red;
+}
+
+.navbar .nav-link:active,.navbar .nav-link:focus{
+    color: green !important;
+}
+
+.contenedor-formulario{
+    margin-top: 30px;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.8);
+}
+.boton-enviar-formulario{
+    width: 100%;
+}
+@media (max-width: 768px) {
+  .black{
+    flex-direction: column;
+  }
+}
