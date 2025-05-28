@@ -20,7 +20,7 @@
   <header>
     <!-- barra de navegacion -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor-navegacion">
-      <div class="container-fluid">
+      <div class="container-fluid  justify-content-around">
         <img class="logo me-3" src="assets/image/altoque-wash.jpeg" alt="logo">
 
         <!-- Botón span solo visible en móviles -->
@@ -30,7 +30,7 @@
         </button>
 
         <!-- Menú horizontal visible en pantallas grandes -->
-        <div class="d-none d-lg-flex justify-content-between flex-grow-1 align-items-center">
+        <div class="d-none d-lg-flex justify-content-between  align-items-center">
           <!-- Menú (izquierda) -->
           <ul class="navbar-nav me-auto">
             <li class="nav-item dropdown">
@@ -65,11 +65,6 @@
               </ul>
             </li>
           </ul>
-
-          <!-- Botón (derecha) -->
-          <a href="https://gamerevolution.pe" target="_blank" class="ms-auto">
-            <button type="button" class="btn btn-success">Whatsapp</button>
-          </a>
         </div>
 
         <!-- Offcanvas solo para móviles -->
@@ -393,15 +388,19 @@
         <button type="button" data-bs-target="#logoCarousel" data-bs-slide-to="2"></button>
       </div>
     </div>
-    <!-- contacto -->
-    <h2 class="text-center mt-3">¿Necesitas más informacion?</h2>
-    <h4 class="text-center">Dejanos tus datos y empieza a aceptar mas medios de <br> pago en tu negocio</h4>
+    <section class="container-fluid formulario-total">
+      <!-- contacto -->
+    <div class="container-fluid titulo-contacto">
+      <h2 class="text-center ">¿Necesitas más informacion?</h2>
+      <h4 class="text-center">Dejanos tus datos y empieza a aceptar mas medios de <br> pago en tu negocio</h4>
+    </div>
     <!-- formulario -->
-    <div class="container contenedor-formulario">
-      <form id="miFormulario" action="https://formsubmit.co/nelpastel540@gmail.com" method="POST">
+    <div class="container-fluid contenedor-formulario">
+      <form id="miFormulario" class="miFormulario" action="https://formsubmit.co/nelpastel540@gmail.com" method="POST">
         <div class="mb-3">
           <label for="validationDefault01" class="form-label">Nombre y apellido</label>
-          <input type="text" class="form-control" id="validationDefault01" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+          <input type="text" class="form-control" id="validationDefault01" name="nombre"
+            placeholder="Ingrese su nombre y apellido" required>
         </div>
         <div class="mb-3">
           <label for="seleccion" class="form-label">Tipo de Documento</label>
@@ -414,12 +413,14 @@
         </div>
         <div class="mb-3">
           <label for="validationDefault01" class="form-label">Numero de Documento</label>
-          <input type="text" class="form-control" name="numero-de-documento"  id="numero-doc" placeholder="Ingrese su nombre y apellido" required>
+          <input type="text" class="form-control" name="numero-de-documento" id="numero-doc"
+            placeholder="Ingrese su nombre y apellido" required>
           <div class="invalid-feedback" id="error-numero-doc"></div>
         </div>
         <div class="mb-3">
           <label for="celular" class="form-label">Celular</label>
-          <input type="text" class="form-control" name="numero-de-celular" id="celular" placeholder="Ingrese su n° de celular" required>
+          <input type="text" class="form-control" name="numero-de-celular" id="celular"
+            placeholder="Ingrese su n° de celular" required>
           <div class="invalid-feedback" id="error-celular"></div>
         </div>
         <div class="mb-3">
@@ -429,13 +430,21 @@
         </div>
         <div class="mb-3">
           <label for="validationDefault02" class="form-label">Nombre de tu negocio</label>
-          <input type="text" class="form-control" name="nombre-de-negocio" id="validationDefault02" placeholder="Nombre del negocio" required>
+          <input type="text" class="form-control" name="nombre-de-negocio" id="validationDefault02"
+            placeholder="Nombre del negocio" required>
         </div>
         <div id="errores" class="text-danger mb-3"></div>
         <button type="submit" class="btn btn-primary boton-enviar-formulario">Enviar</button>
       </form>
     </div>
+    </section>
+    
 
+    <aside>
+      <a href="https://wa.me/51987654321" target="_blank" class="whatsapp-float" aria-label="Chat en WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="50" height="50">
+      </a>
+    </aside>
 
 
   </main>
@@ -452,4 +461,3 @@
 </body>
 
 </html>
-
