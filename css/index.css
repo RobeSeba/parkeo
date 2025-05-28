@@ -6,53 +6,60 @@ html,body{
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* menu */
 .contenedor-navegacion{
     padding: 20px;
     background-color: #042c4b !important;
 }
+
+.nav-item a{
+    color: white;
+ }
+
+.logo{
+    width: 150px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.contacto{
+    color: white;
+
+}
+/*fin menu*/
+
+/*----------------------------------------------------------*/
+/*menu secundario*/
+
+.menu-secundario{
+    background-color: #042c4b !important;
+}
+
+
+/* Metodos pago */
+
 .metodos-pago{
     background-color: #042c4b ;
 }
 
 .metodos-pago h3{
     color: white;
+    font-size: 2rem;
 }
-.menu-secundario{
-    background-color: #042c4b !important;
-}
- .nav-item a{
-    color: white;
- }
-.logo{
-    width: 150px;
-    height: 80px;
-    margin-right: 30px;
-}
-.black{
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.black span{
-    display: block;
-    margin-right: 10px;
-}
-.black p{
-    margin-bottom: 0;
-}
-.contacto{
-    color: white;
 
-}
 
 .metodos-pago{
     padding: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Seccion pagos*/
+
+.pagos{
+    /* background-color: #dbe3eb; */
+    background-color: rgb(248, 246, 246);
 }
 
 .pagos .container{
@@ -65,18 +72,91 @@ html,body{
     line-height: 61px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.presencial{
-    border-bottom: 2px solid transparent;
+
+/*pagos presencial*/
+.icon-check{
+    font-size: 35px;
+    color: black;
+    transition: color 0.5s ease;
 }
 
-.presencial, .virtual{
+.icono-caracteristica, .parrafo-caracteritica{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
+.contenedor-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0;
+    padding: 0px !important;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texto-caracteristica{
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+.opcion-caracteristica{
+    display: block;
+    height: 60px;
+    transition: color 0.5 ease;
+}
+
+
+.opcion-caracteristica:hover .icon-check{
+    color: #25d366;
+}
+
+.presencial{
+    border-bottom: 2px solid transparent;
+    
+}
+.presencial p , .virtual p{
+    display: inline-block;
+   transition: transform 0.3s ease-in-out;
+}
+
+
+.presencial, .virtual{
     cursor: pointer;
- 
 }
 
 .presencial:hover{
     border-bottom: 2px solid red;
+}
+.presencial:hover p , .virtual:hover p{
+    transform: scale(1.1);
+}
+
+/*fin pagos presencial*/
+
+/* pago virtual*/
+.virtual-primer-pago, .virtual-segundo-pago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.contenedor-botones-virtual{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-botones-virtual a{
+    width: 50%;
 }
 
 .card-products__items-item:not(:last-child) {
@@ -106,7 +186,7 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 300px;
     max-width: 1200px;
 }
 
@@ -138,19 +218,7 @@ html,body{
     height: 150px;
 }
 
-.contenedor-caracteristicas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px auto;
-    width: 300px;
-}
-.contenedor-botones{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+
 
 .nav-item a:hover{
     color: red;
