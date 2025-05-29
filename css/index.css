@@ -133,13 +133,24 @@ body {
 }
 
 
+
 .opcion-caracteristica:hover .icon-check {
     color: #25d366;
 }
-
-.presencial {
+/* botones de opcion de pago */
+.presencial,.virtual {
     border-bottom: 2px solid transparent;
 
+}
+.btn-toggle p {
+  color: #333; /* color de texto normal */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Estilo cuando está activo */
+.btn-toggle.active p {
+  color: #007bff; /* por ejemplo, azul para indicar selección */
 }
 
 .presencial p,
@@ -154,7 +165,7 @@ body {
     cursor: pointer;
 }
 
-.presencial:hover {
+.presencial:hover,.virtual:hover {
     border-bottom: 2px solid red;
 }
 
@@ -163,7 +174,9 @@ body {
     transform: scale(1.1);
 }
 
-/*fin pagos presencial*/
+
+
+/*fin pagos *******************************************/
 
 /* pago virtual*/
 
@@ -270,7 +283,6 @@ body {
     border: 4px solid #042c4b;
     border-radius: 20px;
     padding: 20px;
-    /* box-shadow: 4px 4px 8px #E9E33F ; */
 }
 
 .miFormulario {
@@ -281,12 +293,11 @@ body {
 
 .miFormulario input[type="text"] {
     border: 1px solid #042c4b;
-    /* box-shadow: 4px 4px 8px rgba(0,0,0,0.5); */
+
 }
 
 .miFormulario input[type="text"]:focus {
     border: 1px solid #e1c11f;
-    /* box-shadow: 0px 0px 0.5rem  #e1c11f !important; */
 }
 
 #miFormulario label {
