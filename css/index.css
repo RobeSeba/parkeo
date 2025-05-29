@@ -70,8 +70,8 @@ body {
 
 .pagos {
     background-color: #dbe3eb;
-    /* background: linear-gradient(to right, #00008b, #1e90ff, #DBE3EB); */
-
+    /* background: linear-gradient(to right, #00008b, #1e90ff, #DBE3EB);*/
+    padding-bottom: 25px;
 }
 
 .pagos .container {
@@ -206,7 +206,7 @@ body {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 15px !important;
-    margin-bottom: 10px;
+
 }
 
 .contenedor-pagos-anual{
@@ -326,7 +326,7 @@ body {
 .whatsapp-coment {
     background-color: #25d366;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     color: white;
     opacity: 0;
     transform: translateX(20px);
