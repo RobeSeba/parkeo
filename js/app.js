@@ -1,5 +1,5 @@
-let contenedorPagos = document.getElementById("contenedorPagosPresencial");
-let contenedorPagosVirtual= document.getElementById("contenedorPagosVirtual");
+let contenedorPagos = document.getElementById("contenedor-pagos-Mensual");
+let contenedorPagosVirtual= document.getElementById("contenedor-pagos-anual");
 let pagoVirtual = document.getElementById("pago-virtual");
 let pagoPresencial = document.getElementById("pago-presencial");
 

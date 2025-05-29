@@ -1,54 +1,59 @@
-
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* menu */
-.contenedor-navegacion{
+.contenedor-navegacion {
     padding: 20px;
     background-color: #042c4b !important;
 }
 
-.nav-item a{
+.nav-item a {
     color: white;
- }
+}
 
-.logo{
+.logo {
     width: 150px;
     height: 80px;
     margin-right: 30px;
 }
 
-.contacto{
+.contacto {
     color: white;
 
 }
+
 /*fin menu*/
 
 /*----------------------------------------------------------*/
 /*menu secundario*/
 
-.menu-secundario{
+.menu-off {
     background-color: #042c4b !important;
+}
+.navbar-toggler{
+    background-color: rgb(254, 253, 255) !important;
 }
 
 
 /* Metodos pago */
 
-.metodos-pago{
-    background-color: #042c4b ;
+.metodos-pago {
+    background-color: #042c4b;
 }
 
-.metodos-pago h3{
+.metodos-pago h3 {
     color: white;
     font-size: 2rem;
 }
 
 
-.metodos-pago{
+.metodos-pago {
     padding: 20px 0px;
     display: flex;
     justify-content: center;
@@ -57,15 +62,16 @@ html,body{
 
 /*Seccion pagos*/
 
-.pagos{
-    background-color: #dbe3eb; 
+.pagos {
+    background-color: #dbe3eb;
 }
 
-.pagos .container{
+.pagos .container {
     text-align: center;
     padding: 20px 0px;
 }
-.pagos .container h2{
+
+.pagos .container h2 {
     font-weight: 600;
     font-size: 48px;
     line-height: 61px;
@@ -73,19 +79,20 @@ html,body{
 }
 
 /*pagos presencial*/
-.icon-check{
+.icon-check {
     font-size: 35px;
     color: black;
     transition: color 0.5s ease;
 }
 
-.icono-caracteristica, .parrafo-caracteritica{
+.icono-caracteristica,
+.parrafo-caracteritica {
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
-.contenedor-caracteristicas{
+.contenedor-caracteristicas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,67 +101,81 @@ html,body{
     margin: 0;
     padding: 0px !important;
 }
-.contenedor-botones{
+
+.contenedor-botones {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.texto-caracteristica{
+.texto-caracteristica {
     display: block;
     padding-top: 10px;
     margin-bottom: 0px;
 }
-.opcion-caracteristica{
+
+.opcion-caracteristica {
     display: block;
+    width: 300px;
     height: 60px;
     transition: color 0.5 ease;
 }
+.parrafo-caracteristica{
+    width: 265px;
+}
 
 
-.opcion-caracteristica:hover .icon-check{
+.opcion-caracteristica:hover .icon-check {
     color: #25d366;
 }
 
-.presencial{
+.presencial {
     border-bottom: 2px solid transparent;
-    
+
 }
-.presencial p , .virtual p{
+
+.presencial p,
+.virtual p {
     display: inline-block;
-   transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 
-.presencial, .virtual{
+.presencial,
+.virtual {
     cursor: pointer;
 }
 
-.presencial:hover{
+.presencial:hover {
     border-bottom: 2px solid red;
 }
-.presencial:hover p , .virtual:hover p{
+
+.presencial:hover p,
+.virtual:hover p {
     transform: scale(1.1);
 }
 
 /*fin pagos presencial*/
 
 /* pago virtual*/
-.virtual-primer-pago, .virtual-segundo-pago{
+.virtual-primer-pago,
+.virtual-segundo-pago {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
 }
-.contenedor-botones-virtual{
+
+.contenedor-botones-virtual {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.contenedor-botones-virtual a{
+
+.contenedor-botones-virtual a {
     width: 50%;
 }
 
@@ -163,24 +184,26 @@ html,body{
 }
 
 .card-products__items-item {
-    display: flex
-;
+    display: flex;
     align-items: center;
 }
-.card-products__items-text{
+
+.card-products__items-text {
     line-height: 128%;
 }
 
-.boton-orange{
+.boton-orange {
     background-color: orange;
-    
+
     border: none;
 }
-.boton-orange:hover{
+
+.boton-orange:hover {
     background-color: rgb(180, 119, 6);
     color: black;
 }
-.contenedor-pagos{
+
+.contenedor-pagos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,22 +212,10 @@ html,body{
     max-width: 1200px;
 }
 
-
-.contenedor-pagosVirtual .boton-virtual{
-      width:50% ;
-      text-align: center;
-}
-
-.contenedor-pagosVirtual .contenedor-botones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-pagosVirtual{
+.contenedor-pagos-anual{
     display: none;
 }
-.contenedor-imagenes{
+.contenedor-imagenes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,104 +223,136 @@ html,body{
 }
 
 
-.logo-virtual, .modelo-virtual {
+.logo-virtual,
+.modelo-virtual {
     width: 150px;
-    height: 150px;
+    height: 80px;
 }
 
 
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: red;
 }
 
-.navbar .nav-link:active,.navbar .nav-link:focus{
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
     color: green !important;
 }
 
-.contenedor-formulario{
+.contenedor-formulario {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(90deg,rgba(99, 122, 138, 1) 0%, rgba(124, 148, 128, 1) 50%, rgba(99, 122, 138, 1) 100%); */
-   
-    padding-top: 50px ;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.formulario-total{
-     background: linear-gradient(to bottom right, #1e90ff, #00008b);
+.formulario-total {
+    background: linear-gradient(to bottom right, #1e90ff, #00008b);
 }
 
-.titulo-contacto h2, .titulo-contacto h4{
+.titulo-contacto h2,
+.titulo-contacto h4 {
     margin: 0;
     padding: 0;
-    color:#042c4b;
+    color: #042c4b;
 }
-.titulo-contacto h2{
+
+.titulo-contacto h2 {
     padding-top: 20px;
-    color:#042c4b;
+    color: #042c4b;
 }
-.boton-enviar-formulario{
+
+.boton-enviar-formulario {
     width: 100%;
 }
 
 /* formulario */
-#miFormulario{  
+#miFormulario {
     border: 4px solid #042c4b;
     border-radius: 20px;
     padding: 20px;
     /* box-shadow: 4px 4px 8px #E9E33F ; */
 }
-.miFormulario{
-   min-width: 350px;
-   width: 500px;
-   background-color: white;
+
+.miFormulario {
+    min-width: 350px;
+    width: 500px;
+    background-color: white;
 }
 
-.miFormulario input[type="text"]{
+.miFormulario input[type="text"] {
     border: 1px solid #042c4b;
     /* box-shadow: 4px 4px 8px rgba(0,0,0,0.5); */
 }
 
-.miFormulario input[type="text"]:focus{
+.miFormulario input[type="text"]:focus {
     border: 1px solid #e1c11f;
     /* box-shadow: 0px 0px 0.5rem  #e1c11f !important; */
 }
 
-#miFormulario label{
+#miFormulario label {
     font-weight: bold;
-    
+
 }
 
 
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  background-color: #25d366;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .whatsapp-float img {
-  display: block;
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.whatsapp-coment {
+    background-color: #25d366;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+.whatsapp-container:hover .whatsapp-coment {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.whatsapp-coment p {
+    margin: 0;
+    padding: 0;
 }
 
 
-
-
 @media (max-width: 768px) {
-  .black{
-    flex-direction: column;
-  }
+    .black {
+        flex-direction: column;
+    }
+    .pagos .container h2{
+        font-size: 23px;
+    }
 }
