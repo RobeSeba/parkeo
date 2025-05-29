@@ -40,6 +40,12 @@ body {
     background-color: rgb(254, 253, 255) !important;
 }
 
+.offcanvas-header .btn-close {
+  filter: invert(1); 
+  opacity: 1;        
+}
+
+
 
 /* Metodos pago */
 
